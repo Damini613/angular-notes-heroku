@@ -1,0 +1,91 @@
+<!-- <app-app-header [title]="title"></app-app-header> -->
+
+<div class="container register">
+    <form  [formGroup]="loginForm"  class="container rform">
+      <div>
+        <label class="form-label">Name</label>
+        <!-- <input type="text" name="uname" [(ngModel)]="uname" /> -->
+        <input
+          class="inputF"
+          type="text"
+          name="name"
+         autocomplete="off"
+          placeholder="enter your name"
+     
+         
+         
+          formControlName="name"
+        />
+
+  <span *ngIf=" this.f()['name'].touched  && this.f()['name'].hasError('required')">
+Please enter name       
+</span>
+         
+  <span *ngIf=" this.f()['name'].touched  &&  this.f()['name'].value.length<4">
+Please enter minimum 4 characters       
+</span>
+
+        
+<span *ngIf="  this.f()['name'].touched  &&  this.f()['name'].value.length>8">
+    Please enter max 8 characters       
+    </span>
+
+<span *ngIf=" this.f()['name'].hasError('pattern')">
+    Only alphabets allowed       
+    </span>
+  
+      </div>
+
+
+      
+  
+      <div>
+        <label>Email id</label>
+        <input
+          class="inputF"
+          type="text"
+          name="umail"
+         
+          placeholder="enter your email id"
+          formControlName="email"
+        />
+      </div>
+  
+      <div class="inputF">
+        <label style="display: block">Gender</label>
+        <div style="padding-top: 5px; padding-bottom: 5px">
+          <input
+            class="radio"
+            type="radio"
+            value="male"
+            id="male"
+            name="gender"
+          
+            formControlName="gender"
+          />male
+          <input
+            class="radio"
+            type="radio"
+            value="female"
+            id="female"
+            name="gender"
+           
+            formControlName="gender"
+          />female
+        </div>
+      </div>
+  
+      <div class="form-control">
+        <input class="checkbox" type="checkbox" name="agree" id="agree"   formControlName="agree" />
+        <label>Terms and Conditons</label>
+      </div>
+  
+      <div>
+        <button (click)="submit()">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <h1>This is my User's Data</h1>
+  {{ uname }}
+  
