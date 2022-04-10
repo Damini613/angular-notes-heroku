@@ -17,7 +17,11 @@ export class AllNotesComponent implements OnInit {
 
   mapR(i:number){
     switch(i){
-      case 1: return this.link = '/'
+      case 0: return this.link = '/services'
+      case 1:return this.link ='/subjects'
+      case 2:return this.link ='/http'
+      case 3:return this.link ='/promise'
+
     
       default:return this.link='/http'
     }

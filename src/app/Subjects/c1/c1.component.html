@@ -1,3 +1,23 @@
-<p>c1 works!</p>
 
-<button (click) = "goTo()"> click</button>
+<app-app-header  [show]="true" [title]="'Subjects'"></app-app-header>
+<div class="main">
+
+    <div class="pdiv">
+
+  
+    <p>Hey! This is Component 1. Upon clicking the below button through service we will share the data of Component 1 with the Component 2</p>
+
+</div>
+
+<div class="buttondiv">
+    <button (click) = "goTo()"> click</button>
+</div>
+    
+    
+    <div class="app2div ">
+
+    
+    <app-c2></app-c2>
+
+</div>
+</div>

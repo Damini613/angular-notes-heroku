@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CardsComponent } from './FormArray/cards/cards.component';
 import { HttpCompComponent } from './HttpClientModule/http-comp/http-comp.component';
 import { HttpNotesComponent } from './HttpClientModule/http-notes/http-notes.component';
 import { IntercompComponent } from './Interceptors/intercomp/intercomp.component';
 import { AllNotesComponent } from './NotesList/all-notes/all-notes.component';
 import { ObsTCodesComponent } from './Observables/obs-tcodes/obs-tcodes.component'
+import { ParentOutComponent } from './OutputDecorator/parent-out/parent-out.component';
+import { TestPromisesComponent } from './promises/test-promises/test-promises.component';
+import { RegistrationPageComponent } from './ReactiveForm/registration-page/registration-page.component';
 import { EntryToDashbaordGuard } from './Routing Guard/entry-to-dashbaord.guard';
 import { ExitGuard } from './Routing Guard/exit.guard';
 import { ChildComponent } from './Routing/child/child.component';
@@ -15,6 +19,8 @@ import { ParentComponent } from './Routing/parent/parent.component';
 import { RoutingNotesComponent } from './Routing/routing-notes/routing-notes.component';
 //  './observables/obs-tcodes/obs-tcodes.component';
 import { AgeComponent } from './services/age/age.component';
+import { C1Component } from './Subjects/c1/c1.component';
+import { C2Component } from './Subjects/c2/c2.component';
 import { RegisterComponent } from './template-driven-form/register/register.component';
 
 const routes: Routes = [
@@ -23,6 +29,11 @@ const routes: Routes = [
     path:'',
     redirectTo:'/notesList',
     pathMatch:'full'
+  },
+  {
+
+    path:'outputDecorator',
+    component:ParentOutComponent
   },
   {
     path:'notesList',
@@ -72,10 +83,20 @@ component:DashboardComponent
     ]
 
   },
+  {
+path:'formArray',
+component:CardsComponent
+
+  },
    //lazy laoding 
   {
     path:'lazy',
   loadChildren:  ()=> import('./LazyLoading/learning/learning.module').then(res => res.LearningModule)
+  },
+  {
+   
+    path:'reactiveForms',
+    component:RegistrationPageComponent
   },
 
   {
@@ -89,6 +110,22 @@ component:DashboardComponent
   {
     path:'httpNotes',
     component:HttpNotesComponent
+  },
+  {
+    path:'services',
+    component:AgeComponent
+  },
+  {
+    path:'subjects',
+    component:C1Component
+  },
+  {
+    path:'serviceC2',
+    component:C2Component
+  },
+  {
+    path:'promise',
+    component:TestPromisesComponent
   },
   {
     path:'**',

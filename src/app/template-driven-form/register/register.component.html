@@ -11,7 +11,39 @@
         name="uname"
         [(ngModel)]="uname"
         placeholder="enter your name"
+        autocomplete="off"
+        #nameId = "ngModel"
+        pattern="^[a-zA-Z]+$"
+        minlength="4"
+        maxlength="8"
       />
+
+      <span
+        *ngIf="
+        nameId.touched && !rF.form.controls['uname'].dirty
+        "
+      >
+        Please enter your name
+      </span>
+<!-- 
+      <span *ngIf = "  nameId.touched  && nameId.value.length <4" >
+
+        Please enter character more than 4
+      </span> -->
+
+      <span *ngIf = "  nameId.touched  && nameId.errors?.['minlength']" >
+
+        Please enter character more than 4.
+      </span>
+
+      <!-- <span *ngIf = "nameId.touched && !nameId.value.maxlength">
+        Please enter character less than 8
+      </span> -->
+
+      <span *ngIf = "nameId.touched && nameId.errors?.['pattern']" >
+        Please enter alphabets only.
+      </span>
+
     </div>
 
     <div>
@@ -27,10 +59,17 @@
 
     <div class="inputF">
       <label style="display: block">Gender</label>
-      <div style="padding-top:5px;padding-bottom:5px">
-        <input class="radio" type="radio" value="male" id="male" name="gender" ngModel />male
+      <div style="padding-top: 5px; padding-bottom: 5px">
         <input
-        class="radio"
+          class="radio"
+          type="radio"
+          value="male"
+          id="male"
+          name="gender"
+          ngModel
+        />male
+        <input
+          class="radio"
           type="radio"
           value="female"
           id="female"
@@ -41,7 +80,7 @@
     </div>
 
     <div class="form-control">
-      <input class= "checkbox" type="checkbox" name="agree" id="agree" ngModel />
+      <input class="checkbox" type="checkbox" name="agree" id="agree" ngModel />
       <label>Terms and Conditons</label>
     </div>
 

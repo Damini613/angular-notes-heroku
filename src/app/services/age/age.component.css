@@ -1,0 +1,93 @@
+.cls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%;*/
+    height: 100%; 
+    /* border: 1px solid black; */
+    background-color: rgb(194, 255, 235);
+    /* display: block; */
+}
+
+h3{
+    font-family: cursive;
+    font-size: 40px;
+    display: block;
+    color: rgb(13, 80, 75);
+    font-weight: 500px;
+    box-shadow: 2px 2px 4px rgb(133, 120, 120);
+    /* padding-block: 10px; */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /* padding-left: 40px; */
+    padding-right: 5px;
+    background-color: rgb(122, 255, 211);
+    text-align: center;
+    text-align-last: center;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+input{
+    display: block;
+  
+    /* flex-direction: row; */
+    width: 60%;
+    height: 5%;
+    border-radius: 0.5em;
+    font-family: cursive;
+    background-color: rgb(168, 253, 253);
+  
+    /* padding-block: 50px; */
+    /* padding-left: 20px;
+  padding-right: 10px; */
+  /* padding-block: 20px; */
+
+}
+
+.inputDiv{
+    /* padding-left   : 20px; 
+    jus*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+   
+    align-items:flex-start;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 6px 1px rgb(100, 91, 91);
+    display: block;
+    flex-wrap: wrap;
+}
+button{
+   
+    background-color: rgb(43, 104, 104);
+    color: white;
+    font-family: cursive;
+    border-radius: 0.5em;
+    block-size: 40px;
+    font-size: 20px;
+}
+
+.buttonCls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+   
+}
+
+
+.ageCls h2{
+    text-align: center;
+    text-align-last: center;
+    font-family: cursive;
+    font-size: 30px;
+    padding-top: 20px;
+    color: rgb(29, 87, 68);
+    /* width: 20px; */
+}

@@ -1,0 +1,23 @@
+<!-- <div formArrayName="skills"> -->
+
+    <form [formGroup]="Skill">
+        <input type="text" placeholder="skill name">
+        <input type="text" placeholder="year of experience">
+        <button (click)="submit()">ADD skill</button>
+
+
+        <div formArrayName="skills">
+            <div *ngFor="let city of skills.controls; index as i">
+
+                <div    [formGroupName]="i">
+                    {{city}}
+                </div>
+              <!-- <[formControlName]="i"> -->
+           
+          
+            </div>
+        </div>
+    </form>
+  
+<!-- </div> -->
+

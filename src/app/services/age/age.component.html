@@ -1,8 +1,23 @@
-<div>
-    <h2 *ngIf="show">My age is : {{Age}} </h2>
+<app-app-header  [show]="true" [title]="'Services'"></app-app-header>
 
-    <label ><h3>enter your DOB</h3></label>
-    <input type="number" name="dob" [(ngModel)] ="dob">
 
-    <button (click)="submit()">Calculate Age </button>
+<div class="container cls">
+   
+    <div class="container box"> 
+        <label ><h3>Enter your DOB</h3></label>
+        <div class="inputDiv">
+            <input type="date" name="dob" [(ngModel)] ="dob">
+        </div>
+      
+    <div class="buttonCls">
+        <button (click)="submit()">Calculate Age </button>
+    </div>
+       
+       <div class="ageCls">
+        <h2 *ngIf="show">Hey! You are {{Age}} years old</h2>
+       </div>
+      
+    
+    </div>
+
 </div>

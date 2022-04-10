@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './template-driven-form/register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgeComponent } from './services/age/age.component'
 import { CalAgeService } from './services/cal-age.service';
 import { TestPromisesComponent } from './promises/test-promises/test-promises.component';
@@ -36,8 +36,14 @@ import { AppFooterComponent } from './app-footer/app-footer/app-footer.component
 import { RoutingNotesComponent } from './Routing/routing-notes/routing-notes.component';
 import { HttpNotesComponent } from './HttpClientModule/http-notes/http-notes.component';
 import { AllNotesComponent } from './NotesList/all-notes/all-notes.component';
+import { ParentOutComponent } from './OutputDecorator/parent-out/parent-out.component';
+import { ChildOutComponent } from './OutputDecorator/child-out/child-out.component';
+import { RegistrationPageComponent } from './ReactiveForm/registration-page/registration-page.component';
+import { CardsComponent } from './FormArray/cards/cards.component';
+// import { RegistrationPageComponent } from './OutputDecorator/registration-page/registration-page.component';
 // import { AppFooterComponent } from './app-footer/app-footer/app-footer.component';
 // import {l} from './LazyLoading'
+
 
 @NgModule({
   declarations: [
@@ -60,20 +66,31 @@ import { AllNotesComponent } from './NotesList/all-notes/all-notes.component';
     RoutingNotesComponent,
     HttpNotesComponent,
     AllNotesComponent,
-    // AppFooterComponent
+    ParentOutComponent,
+    ChildOutComponent,
+    RegistrationPageComponent,
+    CardsComponent,
+    // RegistrationPageComponent,
+    // AppFooterComponent,
+ 
+
    
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
+   
     FormsModule,
+    
     HttpClientModule,
-  
+    
+    
 
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
-    LearningModule
+    LearningModule,
+    ReactiveFormsModule
   ],
   providers: [CalAgeService,SerService,
     {provide:HTTP_INTERCEPTORS,useClass:InterceptorsService,multi:true}

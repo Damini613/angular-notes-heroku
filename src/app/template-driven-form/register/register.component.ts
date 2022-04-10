@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Form, FormControl, FormGroup } from '@angular/forms';
+import { AbstractControl, Form, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -8,6 +8,8 @@ import { Form, FormControl, FormGroup } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
   title:string='Template driven form'
+rf:any
+  
 
   uname:string=''
 
@@ -21,10 +23,21 @@ export class RegisterComponent implements OnInit {
   
 
   submit(f:any){
+    this.rf=f
   
+    alert('Hey! Form submitted')
     console.log(f)
     console.log(f.form.controls.uname.value)
-   
+    console.log(f.form.controls.uname.touched)
+    // console.log( f.form.controls('uname').touched)
+  //  console.log(this.get['uname.value'])
+  // console.log(this.get().get('uname')?.value)
+  console.log(this.rf.form.controls.value)
+  }
+
+  get():AbstractControl{
+
+    return this.rf.form.controls
   }
 
 }

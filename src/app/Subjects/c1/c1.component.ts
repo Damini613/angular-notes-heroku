@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SerService } from '../ser.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { SerService } from '../ser.service';
 })
 export class C1Component implements OnInit {
 
-  constructor(private s : SerService) { }
+  constructor(public s : SerService,private router:Router) { }
 
   ngOnInit(): void {
   
@@ -18,6 +19,7 @@ export class C1Component implements OnInit {
       name:'john doe',
       age :25
     })
+    // this.router.navigateByUrl('/serviceC2')
 
   }
 }

@@ -1,3 +1,4 @@
+import { SlicePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { CalAgeService } from '../cal-age.service';
 
@@ -7,7 +8,8 @@ import { CalAgeService } from '../cal-age.service';
   styleUrls: ['./age.component.css']
 })
 export class AgeComponent implements OnInit {
-  dob:number=0;
+  // dob:number=0;
+  dob:any
   Age :number=0
   show:boolean= false;
   constructor(private calAge:CalAgeService) { }
@@ -16,7 +18,9 @@ export class AgeComponent implements OnInit {
   }
 
   submit(){
-    this.Age=this.calAge.calculateAge(this.dob)
+    let d = this.dob.toString().slice(0,4)
+    console.log(d)
+    this.Age=this.calAge.calculateAge(d)
     this.show= true;
   }
 

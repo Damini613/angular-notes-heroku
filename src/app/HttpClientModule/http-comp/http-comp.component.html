@@ -1,6 +1,7 @@
 <app-app-header
   [ngStyle]="{ 'background-color': ' rgb(145, 17, 55)' }"
   [title]="title"
+  [show]="true"
 ></app-app-header>
 <div *ngIf="loader.isLoading | async" class="loader">
   <mat-spinner></mat-spinner>

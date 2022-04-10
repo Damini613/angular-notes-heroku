@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./routing-notes.component.css']
 })
 export class RoutingNotesComponent implements OnInit {
-show=true
+
 link = `/login/2`
 title='Routing & Guard'
   notes=`Angular is single page application and only index.html page gets loaded in browser
