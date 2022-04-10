@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: justify;
+    /* text-indent: 10px; */
+    text-align-last: left;
+    /* border: 1px solid red; */
+    color: rgb(145, 17, 55);
+    background-color:  rgb(255, 215, 227);
+    height: 100vh;
+   
+  }
+
+  li{
+   
+      padding-block: 10px;
+  }

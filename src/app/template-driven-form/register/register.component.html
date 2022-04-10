@@ -1,0 +1,55 @@
+<app-app-header [title]="title"></app-app-header>
+
+<div class="container register">
+  <form class="container rform" #rF="ngForm" (ngSubmit)="submit(rF)">
+    <div>
+      <label class="form-label">Name</label>
+      <!-- <input type="text" name="uname" [(ngModel)]="uname" /> -->
+      <input
+        class="inputF"
+        type="text"
+        name="uname"
+        [(ngModel)]="uname"
+        placeholder="enter your name"
+      />
+    </div>
+
+    <div>
+      <label>Email id</label>
+      <input
+        class="inputF"
+        type="text"
+        name="umail"
+        ngModel
+        placeholder="enter your email id"
+      />
+    </div>
+
+    <div class="inputF">
+      <label style="display: block">Gender</label>
+      <div style="padding-top:5px;padding-bottom:5px">
+        <input class="radio" type="radio" value="male" id="male" name="gender" ngModel />male
+        <input
+        class="radio"
+          type="radio"
+          value="female"
+          id="female"
+          name="gender"
+          ngModel
+        />female
+      </div>
+    </div>
+
+    <div class="form-control">
+      <input class= "checkbox" type="checkbox" name="agree" id="agree" ngModel />
+      <label>Terms and Conditons</label>
+    </div>
+
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>
+</div>
+
+<h1>This is my User's Data</h1>
+{{ uname }}

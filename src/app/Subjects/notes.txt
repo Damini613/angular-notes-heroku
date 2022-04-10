@@ -1,0 +1,31 @@
+we can transfer data from 1 comp to other 
+
+rxjs 
+
+
+datatransfer = new Subject()  --> service 
+
+it will return us observable 
+
+
+
+comp --> first comp 
+const(p n : service)
+this.n.datatransfer.next({
+    name :'john doe',
+    age: 25
+})
+
+
+obs --subs 
+
+
+comp 2 
+
+const(p n : service)
+
+//just it needs to subscribe it
+
+this.n . datatransfer.subscribe((res)=>{
+    console.log(res)
+})

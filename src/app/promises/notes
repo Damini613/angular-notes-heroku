@@ -1,0 +1,32 @@
+Promises :
+
+to handle async operation 
+
+in async codes are not excecuted line by line 
+
+
+we can also use CALL Back but chaining is not good to use.
+
+Solution is Promise 
+
+
+A Promise has four states:
+
+fulfilled
+rejected 
+pending
+settled
+
+
+fulfilled: Action related to the promise succeeded.
+rejected: Action related to the promise failed.
+pending: Promise is still pending i.e. not fulfilled or rejected yet.
+settled: Promise has fulfilled or rejected.
+
+
+Note:
+
+await must be written inside try catch block 
+
+because await only handles resolve and to handle reject we have to write it inside catch block
+

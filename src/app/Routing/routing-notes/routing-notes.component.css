@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 30px;
+    background-color: rgba(182, 251, 150, 0.41);
+    color: rgb(16, 61, 61);
+    /* height: 100vh; */
+    /* display: block; */
+    align-content: 10px space-around 20 pxspace-between;
+    white-space: pre-wrap;
+    padding-top:20px ;
+    text-align-last: left;
+    text-overflow: ellipsis;
+    
+    
+    
+}

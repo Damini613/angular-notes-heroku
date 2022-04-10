@@ -1,0 +1,19 @@
+<app-app-header
+[ngStyle]="{ 'background-color': ' rgb(145, 17, 55)' }"
+  [title]="title"
+></app-app-header>
+
+<div class="conatiner login">
+
+    <p>Login works!</p>
+
+
+    <h2>id {{id}}</h2>
+    <!-- this is now correct way -->
+    <!-- <button [routerLink]="['/dashboard']">Click</button>  -->
+    
+    <!-- correct way to handle routing part in ts file -->
+    <button (click)="goToDashboard()" >Go to Dashboard</button>
+</div>
+
+<app-app-footer [rLink]="'/routingNotes'" ></app-app-footer>

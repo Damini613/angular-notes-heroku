@@ -1,0 +1,11 @@
+<app-app-header [title]="'List of all Topics'"></app-app-header>
+
+<div class="container">
+
+    <ul>
+        <li *ngFor="let list of notesList,let i=index">
+          <a href="" [routerLink]="[mapR(i)]" > {{i+1}}. {{list}}</a> 
+        </li>
+    </ul>
+
+</div>

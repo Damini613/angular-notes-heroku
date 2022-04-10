@@ -1,0 +1,47 @@
+.notFoundPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: white
+}
+
+p{
+   
+   
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive;
+    font-weight:bold;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Times New Roman', Times, serif ; */
+    font-style: initial;
+    color:red;
+    text-shadow: 2px 2px  rgb(163, 160, 160);
+    
+   
+}
+
+h2{
+justify-content: right;
+padding-left: 20px;
+padding-right: 20px;
+font-size: 100px ;
+font-family: cursive;
+font-weight:bold;
+color: rgb(7, 7, 222);
+text-shadow: 2px 2px rgb(77, 73, 73)
+/* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+}
+
+
+button{
+    background-color: rgb(255, 164, 84);
+    font-size: 20px;
+    color: black;
+    box-shadow: 2px 2px rgb(77, 73, 73);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: cursive;
+}

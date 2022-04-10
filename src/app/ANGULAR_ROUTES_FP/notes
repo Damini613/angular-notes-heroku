@@ -1,0 +1,72 @@
+Course Introduction
+In this course Angular - Routes and Forms, you will learn to:
+
+manage dependencies of your class through Dependency Injection
+talk to servers through APIs
+build Single Page Apps using routers
+take user inputs through forms
+By the end of this course, you should be in a position to create your Single Page Application and interact with users and servers through forms and APIs.
+
+
+What Is Dependency Injection?
+What Is Dependency Injection?
+When Object 'X' needs Object 'Y' to run, then Y is dependency of X or we can say in simple terms X is dependent on Y.
+
+Here in Angular, dependecies are defined as Services, which will be injected into those Objects which asks for it.
+
+Note: Services / Dependencies are always defined inside "constructor" of the class.
+
+Let us consider the following example:
+
+export class SmartPhone {
+    constructor (bat: Battery, disp: Display){}
+}
+Here SmartPhone is dependent on Services, that supply power(Battery) and takes input and shows output(Display), for its creation. So SmartPhone dependencies are: Battery and Display.
+
+How to Inject Dependencies?
+The whole technique of Injecting Dependencies can be summed up as:
+
+Creating a Service
+Registering Service with Providers.
+Defining Service inside constructor of the class that needs the Service. (Injecting)
+You might wonder, what is a provider?
+
+Well, It is a meta-data that generates instances of services that the injector injects into components and other services..
+
+Everything looks fine, but what exactly is Service and how do you define it?
+
+What is a Service?
+Service is a class that has a specific purpose. Services are mainly used to provide data to components that ask for it.
+
+Components are used only to provide view to user. The Service class is Decorated with @Injectable().
+
+import { Injectable } from `@angular/core`
+
+// @Injectable() defines class "EmpService" as a "Service Class"
+@Injectable({ providedIn: 'root', })    // updated in angular-v6+
+export class EmpService {
+    // do something
+}
+To Summarize: Components use Service, fetches data and generates view ( view is defined in template of component).
+
+Difference between @Inject and @Injectable
+@Inject()
+
+It is a parameter decorator
+It explicitly tells what are the dependencies of the class inside constructor parameters
+export class SmartPhone {
+    constructor (@Inject(Battery) bat){}
+}
+The same functionality can be easily achieved using TypeScript.
+
+export class SmartPhone {
+    constructor ( bat: Battery ){}
+}
+@Injectable()
+
+It is a class decorator
+This tells Angular that this class can be used with Dependency Injector. So whenever a component is dependent on this class, Injector can create the instance of this class.
+@Injectable()
+export class SmartPhone{}
+Remember to add the paranthesis () in @Inject() and @Injectable()
+

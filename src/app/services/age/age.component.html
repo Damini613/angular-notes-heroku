@@ -1,0 +1,8 @@
+<div>
+    <h2 *ngIf="show">My age is : {{Age}} </h2>
+
+    <label ><h3>enter your DOB</h3></label>
+    <input type="number" name="dob" [(ngModel)] ="dob">
+
+    <button (click)="submit()">Calculate Age </button>
+</div>

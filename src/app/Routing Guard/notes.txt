@@ -1,0 +1,62 @@
+canActivateGuard
+
+canDeactivateGuard
+
+
+    entry ===> Guard ==> [component]  ===> exit  ==>Guard  ===> [comp3]
+             
+              CAG                        CDG
+
+
+
+canActivate
+
+* authorize
+
+* yes ==> allow otherwise ==> deny
+
+canDeactivate
+
+1.already in that comp u are there 
+
+2.again it will do the cross checking
+
+yes ==> allow  , otherwise => deny 
+
+ng g guard/g gname
+
+Q--> canActivate 
+
+      canDeactivateChild
+
+
+Guard is a also a service , so injectable 
+
+
+interface -->  canActivate ...method override
+
+canActivate():boolean{
+
+    return true;
+
+}
+
+
+Login ====> G dashboard
+
+{path:'dashboard', canActivate : [EntryGuard] }
+
+() CanActivate
+
+ ( ) CanActivateChild
+
+ ( ) CanDeactivate
+
+ ( ) CanLoad
+
+
+ in both canActivateGuard & canDeactivateGuard  ==> 
+ 
+ CanActivate is only the method 
+
+
