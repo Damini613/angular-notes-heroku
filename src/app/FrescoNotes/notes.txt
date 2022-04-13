@@ -1,3 +1,4 @@
+
 Introduction to Angular 2
 In this course, you will exploreAngular 2, which is a sequel to Angular 1.x with numerous enhancements. You will briefly go through the following concepts.-
 
@@ -65,6 +66,7 @@ This is a sample code for module.
   bootstrap: [AppComponent]
  })
  export class AppModule { }  
+ 
  // AppModule Class is now defined as Module : @NgModule
 Trick to identify Root Module is that it imports "BrowserModule". Other modules of that same application imports "CommonModule".
 imports:[...] - define array of modules required to build application here.
@@ -84,6 +86,7 @@ Components - Example
 This example will render Hello, World! in the browser. Angular will search for <my-app> element in HTML file and replace it with the template content.
 
 File: app.component.ts
+`
  import { Component } from '@angular/core';
  @Component({
   selector: 'my-app',
@@ -97,7 +100,7 @@ File: index.html
   <my-app> Loading... </my-app>
  </body>
  ............
-
+`
  What is Template?
 Template is a simple HTML code that creates view for a component, which you can dynamically manipulate.
 
@@ -266,3 +269,5 @@ Text Input box
 Button 1 – To add an activity
 Button 2 – To clear all activities
 
+
+*/

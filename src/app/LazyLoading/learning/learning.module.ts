@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HelloComponent } from './hello/hello.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppHeaderComponent } from '../app-header/app-header.component';
+
 
 const routes:Routes  = [
   {
@@ -12,7 +14,9 @@ const routes:Routes  = [
 
 @NgModule({
   declarations: [
-    HelloComponent
+    HelloComponent,
+    AppHeaderComponent
+
   ],
   // imports: [
   //   CommonModule

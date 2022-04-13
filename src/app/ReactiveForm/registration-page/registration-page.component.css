@@ -4,7 +4,7 @@
     justify-content: center;
     height: 100vh;
     box-shadow: 10px;
-    background-color: rgb(242, 215, 240);
+    background-color: rgb(254, 201, 220);
    
 }
 
@@ -16,7 +16,7 @@ label{
 }
 
 .rform{
-    background-color: rgb(242, 215, 240);
+    background-color:  rgb(249, 175, 202);
     border: 1px solid black;
     box-shadow: 2px 2px  10px #000000;
     padding-left: 50px;
@@ -37,11 +37,12 @@ label{
 button{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(225, 149, 222);
+    background-color:  rgb(212, 124, 156);
     font-family: cursive;
     font-weight: bolder;
     font-size: x-large;
     border-radius: 0.5em;
+    /* color: white; */
     /* display: block; */
 }
 

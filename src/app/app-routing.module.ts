@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CardsComponent } from './FormArray/cards/cards.component';
+import { NotesComponent } from  './FrescoNotes/notes/notes.component'
+import { Notes1Component } from './FrescoNotes/notes1/notes1.component';
+import { Notes2Component } from './FrescoNotes/notes2/notes2.component';
 import { HttpCompComponent } from './HttpClientModule/http-comp/http-comp.component';
 import { HttpNotesComponent } from './HttpClientModule/http-notes/http-notes.component';
+import { ParentComponentInput } from './InputDecorator/parent/parent.component';
 import { IntercompComponent } from './Interceptors/intercomp/intercomp.component';
 import { AllNotesComponent } from './NotesList/all-notes/all-notes.component';
 import { ObsTCodesComponent } from './Observables/obs-tcodes/obs-tcodes.component'
@@ -66,6 +70,23 @@ component:DashboardComponent
   {
     path:'home',
     component:AgeComponent
+  },
+  {
+path:'inputDecorator',
+component:ParentComponentInput
+  },
+  {
+    path:'notes1',
+    component:Notes1Component
+  },
+  {
+    path:'notes2',
+    component:Notes2Component
+  },
+  {
+    path:'inputDecoratorNotes',
+    component:NotesComponent
+
   },
 
   // independent 

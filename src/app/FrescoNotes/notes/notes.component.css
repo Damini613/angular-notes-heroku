@@ -2,20 +2,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(203, 252, 182);
     height: 100vh;
-    background-color: rgb(255, 233, 205);
 }
+
 p{
     font-family: cursive;
     font-size: 30px;
-    line-height: 1.5em;
-    border: 1px solid black;
-    box-shadow: 2px 2px 4px 2px rgb(71, 68, 68);
+    line-height: 2em;
+    border: 1px solid darkgreen;
+    box-shadow:2px 2px 4px 2px rgb(69, 78, 69);
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-radius: 0.5em;
 }

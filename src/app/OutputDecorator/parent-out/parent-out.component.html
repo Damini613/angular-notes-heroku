@@ -1,6 +1,15 @@
-<p>parent-out works!</p>
+<div class="divCls">
+    
+
+
+<p>This is Parent Component where data = 'parent'</p>
 
 
 <app-child-out  (newEvent)="updateTitle($event)"  ></app-child-out>
+<p>
+    The value of data will change from parent to child, when we click on button and event is emitted.
 
-{{title}}
+data = {{title}}
+</p>
+
+</div>

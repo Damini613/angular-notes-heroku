@@ -1,3 +1,22 @@
-<p>parent works!</p>
+<app-app-header [title]="'Input & Output Decorator'" [show]="true"></app-app-header>
 
-<app-child [data]="'parent'"></app-child>
+<div class="container divCls" style="margin-bottom: 10px;">
+    <!-- <label for="">Input Decorator</label> -->
+
+<div class="div1">
+    <p>This is Child Component</p>
+    <app-child-input ></app-child-input>
+</div>
+   
+<div class="div2">
+    <p>This is Child Component where value of data is passed by Parent Component</p>
+    <app-child-input [data]="'parent'"></app-child-input>
+</div>
+    
+    
+<app-parent-out></app-parent-out>    
+</div>
+
+
+
+<app-app-footer [rLink]="'/inputDecoratorNotes'" ></app-app-footer>

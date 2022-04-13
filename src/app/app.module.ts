@@ -40,6 +40,11 @@ import { ParentOutComponent } from './OutputDecorator/parent-out/parent-out.comp
 import { ChildOutComponent } from './OutputDecorator/child-out/child-out.component';
 import { RegistrationPageComponent } from './ReactiveForm/registration-page/registration-page.component';
 import { CardsComponent } from './FormArray/cards/cards.component';
+import { ParentComponentInput } from './InputDecorator/parent/parent.component';
+import { ChildComponentInput } from './InputDecorator/child/child.component';
+import { Notes1Component } from './FrescoNotes/notes1/notes1.component';
+import { Notes2Component } from './FrescoNotes/notes2/notes2.component';
+import { NotesComponent } from './FrescoNotes/notes/notes.component'
 // import { RegistrationPageComponent } from './OutputDecorator/registration-page/registration-page.component';
 // import { AppFooterComponent } from './app-footer/app-footer/app-footer.component';
 // import {l} from './LazyLoading'
@@ -70,12 +75,18 @@ import { CardsComponent } from './FormArray/cards/cards.component';
     ChildOutComponent,
     RegistrationPageComponent,
     CardsComponent,
+    ParentComponentInput,
+    ChildComponentInput,
+    Notes1Component,
+    Notes2Component,
+    NotesComponent
     // RegistrationPageComponent,
     // AppFooterComponent,
  
 
    
   ],
+  // exports:[AppHeaderComponent],
   imports: [
     BrowserModule,
     RouterModule,

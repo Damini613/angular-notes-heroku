@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-child',
+  selector: 'app-child-input',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css']
 })
-export class ChildComponent implements OnInit {
+export class ChildComponentInput implements OnInit {
 
   @Input() data:string = 'child' //it should come from parent
 

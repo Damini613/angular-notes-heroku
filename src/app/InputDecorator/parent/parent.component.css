@@ -1,0 +1,45 @@
+.divCls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+background-color: rgb(255, 211, 234);
+height: 100vh;
+/* flex-wrap: wrap; */
+}
+
+p{
+    font-family: cursive;
+    font-size: 30px;
+    text-align-last:center;
+    line-height: 2em;
+   
+}
+
+.div1{
+    border: 1px solid rgb(169, 119, 129);
+    box-shadow: 2px 2px 4px 2px rgb(89, 82, 83);
+    border-radius: 0.5em;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    
+}
+.div2{
+    border: 1px solid rgb(169, 119, 129);
+    box-shadow: 2px 2px 4px 2px rgb(89, 82, 83);
+    border-radius: 0.5em;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin-top: 20px;
+  
+    
+}
+
+label{
+    font-family: cursive;
+    font-size: 20px;
+}

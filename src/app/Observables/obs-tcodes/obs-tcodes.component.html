@@ -1,5 +1,17 @@
-<p>obs-tcodes works!</p>
+<app-app-header [show]="true" [title]="'Observables'"></app-app-header>
 
-<button routerLink="/home">click me</button>
-<!-- 
-<mat-spinner value = "40"></mat-spinner> -->
+
+<div class="conatiner divCls">
+    
+    <p>
+        Observables : we have subscribed to an Observable. At an interval of 1 second we are getting value emitted by Observable 
+    </p>
+    <p>
+        {{obs2 | async}}
+    </p>
+
+
+<button routerLink="/notesList">UnSubscribe The Observable</button>
+</div>
+
+<app-app-footer [rLink]="'/'" ></app-app-footer>

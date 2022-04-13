@@ -1,0 +1,45 @@
+.divCls{
+    background-color: rgb(253, 253, 189);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    font-family: cursive;
+    font-size: 50px;
+    line-height: 1.5em;
+    font-weight: 500px;
+    color:rgb(95, 63, 5);
+    border: 1px solid black;
+   
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-block-start: 20px; */
+  box-shadow: 1px 1px 4px 2px black;
+  border-radius: 0.5em;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  
+   
+    
+}
+button{
+    
+    background-color: rgb(237, 105, 57);
+    color: white;
+    font-family: cursive;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-radius: 0.5em;
+    margin-top: 20px;
+
+}
