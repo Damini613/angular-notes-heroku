@@ -23,7 +23,7 @@ export class AllNotesComponent implements OnInit {
     switch(i){
       case 0: return this.link = '/services'
       case 1:return this.link ='/subjects'
-      case 2:return this.link ='/http'
+      case 2:return this.link ='/login/2'
       case 3:return this.link ='/promise'
       case 4:return this.link ='/tcs'
       case 6:return this.link ='/inputDecorator'
